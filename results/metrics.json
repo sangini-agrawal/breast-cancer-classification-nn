@@ -1,0 +1,281 @@
+{
+  "dataset": {
+    "rows": 569,
+    "columns": 31,
+    "missing_values": 0,
+    "duplicate_rows": 0,
+    "class_counts": {
+      "Malignant": 212,
+      "Benign": 357
+    }
+  },
+  "split": {
+    "train": 364,
+    "validation": 91,
+    "test": 114
+  },
+  "hyperparameters": {
+    "hidden_units": [
+      16,
+      8
+    ],
+    "dropout": 0.2,
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "max_epochs": 100,
+    "patience": 10,
+    "seed": 42
+  },
+  "epochs_trained": 51,
+  "best_epoch": 41,
+  "trainable_params": 650,
+  "neural_network": {
+    "accuracy": 0.9649122807017544,
+    "precision_malignant": 0.9318181818181818,
+    "recall_malignant": 0.9761904761904762,
+    "f1_malignant": 0.9534883720930233,
+    "specificity": 0.9583333333333334,
+    "precision_macro": 0.9587662337662337,
+    "recall_macro": 0.9672619047619048,
+    "f1_macro": 0.9626596790042581,
+    "roc_auc": 0.9944,
+    "confusion_matrix": [
+      [
+        41,
+        1
+      ],
+      [
+        3,
+        69
+      ]
+    ],
+    "tp": 41,
+    "fn": 1,
+    "fp": 3,
+    "tn": 69,
+    "test_loss": 0.0933
+  },
+  "comparison": {
+    "Neural Network (ours)": {
+      "accuracy": 0.9649122807017544,
+      "precision_malignant": 0.9318181818181818,
+      "recall_malignant": 0.9761904761904762,
+      "f1_malignant": 0.9534883720930233,
+      "specificity": 0.9583333333333334,
+      "precision_macro": 0.9587662337662337,
+      "recall_macro": 0.9672619047619048,
+      "f1_macro": 0.9626596790042581,
+      "roc_auc": 0.9944,
+      "confusion_matrix": [
+        [
+          41,
+          1
+        ],
+        [
+          3,
+          69
+        ]
+      ],
+      "tp": 41,
+      "fn": 1,
+      "fp": 3,
+      "tn": 69,
+      "test_loss": 0.0933
+    },
+    "Logistic Regression": {
+      "accuracy": 0.9824561403508771,
+      "precision_malignant": 0.9761904761904762,
+      "recall_malignant": 0.9761904761904762,
+      "f1_malignant": 0.9761904761904762,
+      "specificity": 0.9861111111111112,
+      "precision_macro": 0.9811507936507937,
+      "recall_macro": 0.9811507936507937,
+      "f1_macro": 0.9811507936507937,
+      "roc_auc": 0.9957010582010581,
+      "confusion_matrix": [
+        [
+          41,
+          1
+        ],
+        [
+          1,
+          71
+        ]
+      ],
+      "tp": 41,
+      "fn": 1,
+      "fp": 1,
+      "tn": 71
+    },
+    "K-Nearest Neighbours (k=5)": {
+      "accuracy": 0.956140350877193,
+      "precision_malignant": 0.9512195121951219,
+      "recall_malignant": 0.9285714285714286,
+      "f1_malignant": 0.9397590361445783,
+      "specificity": 0.9722222222222222,
+      "precision_macro": 0.9550618108920814,
+      "recall_macro": 0.9503968253968254,
+      "f1_macro": 0.9526381387619444,
+      "roc_auc": 0.9785052910052912,
+      "confusion_matrix": [
+        [
+          39,
+          3
+        ],
+        [
+          2,
+          70
+        ]
+      ],
+      "tp": 39,
+      "fn": 3,
+      "fp": 2,
+      "tn": 70
+    },
+    "Support Vector Machine (RBF)": {
+      "accuracy": 0.9824561403508771,
+      "precision_malignant": 0.9761904761904762,
+      "recall_malignant": 0.9761904761904762,
+      "f1_malignant": 0.9761904761904762,
+      "specificity": 0.9861111111111112,
+      "precision_macro": 0.9811507936507937,
+      "recall_macro": 0.9811507936507937,
+      "f1_macro": 0.9811507936507937,
+      "roc_auc": 0.9950396825396826,
+      "confusion_matrix": [
+        [
+          41,
+          1
+        ],
+        [
+          1,
+          71
+        ]
+      ],
+      "tp": 41,
+      "fn": 1,
+      "fp": 1,
+      "tn": 71
+    },
+    "Random Forest (200 trees)": {
+      "accuracy": 0.9473684210526315,
+      "precision_malignant": 0.9285714285714286,
+      "recall_malignant": 0.9285714285714286,
+      "f1_malignant": 0.9285714285714286,
+      "specificity": 0.9583333333333334,
+      "precision_macro": 0.9434523809523809,
+      "recall_macro": 0.9434523809523809,
+      "f1_macro": 0.9434523809523809,
+      "roc_auc": 0.9940476190476191,
+      "confusion_matrix": [
+        [
+          39,
+          3
+        ],
+        [
+          3,
+          69
+        ]
+      ],
+      "tp": 39,
+      "fn": 3,
+      "fp": 3,
+      "tn": 69
+    }
+  },
+  "cross_validation": {
+    "Neural Network (ours)": {
+      "fold_accuracy": [
+        0.9825,
+        0.9649,
+        0.9737,
+        0.9737,
+        0.9912
+      ],
+      "mean": 0.9772000000000001,
+      "std": 0.008942930168574503
+    },
+    "Logistic Regression": {
+      "fold_accuracy": [
+        0.9736842105263158,
+        0.9473684210526315,
+        0.9649122807017544,
+        0.9912280701754386,
+        0.9911504424778761
+      ],
+      "mean": 0.9736686849868033,
+      "std": 0.016627222216787987
+    },
+    "K-Nearest Neighbours (k=5)": {
+      "fold_accuracy": [
+        0.9824561403508771,
+        0.9473684210526315,
+        0.9385964912280702,
+        0.9824561403508771,
+        0.9646017699115044
+      ],
+      "mean": 0.9630957925787922,
+      "std": 0.01788563714959112
+    },
+    "Support Vector Machine (RBF)": {
+      "fold_accuracy": [
+        0.9912280701754386,
+        0.9473684210526315,
+        0.9736842105263158,
+        0.9912280701754386,
+        0.9823008849557522
+      ],
+      "mean": 0.9771619313771154,
+      "std": 0.016259576655263702
+    },
+    "Random Forest (200 trees)": {
+      "fold_accuracy": [
+        0.9649122807017544,
+        0.9385964912280702,
+        0.956140350877193,
+        0.9473684210526315,
+        0.9646017699115044
+      ],
+      "mean": 0.9543238627542306,
+      "std": 0.010166395463998739
+    }
+  },
+  "best_epoch_metrics": {
+    "accuracy": 0.9863,
+    "loss": 0.0566,
+    "val_accuracy": 0.967,
+    "val_loss": 0.0798
+  },
+  "test_prediction_confidence": {
+    "confident_predictions": 104,
+    "confident_correct": 103,
+    "total": 114,
+    "misclassified": [
+      {
+        "test_index": 3,
+        "true": "Benign",
+        "predicted": "Malignant",
+        "p_malignant": 0.835
+      },
+      {
+        "test_index": 16,
+        "true": "Benign",
+        "predicted": "Malignant",
+        "p_malignant": 0.782
+      },
+      {
+        "test_index": 53,
+        "true": "Malignant",
+        "predicted": "Benign",
+        "p_malignant": 0.034
+      },
+      {
+        "test_index": 66,
+        "true": "Benign",
+        "predicted": "Malignant",
+        "p_malignant": 0.566
+      }
+    ]
+  },
+  "source": "Google Colab run of notebooks/Breast_Cancer_Classification_NN.ipynb (TensorFlow/Keras), October 2026"
+}
